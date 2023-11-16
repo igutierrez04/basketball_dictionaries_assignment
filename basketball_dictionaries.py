@@ -102,10 +102,13 @@ players = [
 
 new_team = []
 
+# for loop to add each player dictionary
 for player_dict in players:
     player = Player(player_dict)
     new_team.append(player)
 
 print(new_team)
 
-Player.add_players(players)
+new_players = Player.add_players(players)
+
+print(new_players)
